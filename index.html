@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>suckless.org - software that sucks less</title>
+    <link rel="stylesheet" href="/pages/css/styles.css">
+</head>
+<body>
+    <div class="header">
+        <h1 class="site-title">0ffl1n3.org</h1>
+        <p class="site-slogan">simple as possible, not simpler.</p>
+    </div>
+    <div class="navbar">
+        <a href="#home">home</a>
+        <a href="#dwm">dwm</a>
+        <a href="#st">st</a>
+        <a href="#core">core</a>
+        <a href="#surf">surf</a>
+        <a href="#tools">tools</a>
+        <a href="#libs">libs</a>
+        <a href="#e.v">e.V.</a>
+        <span class="download-source">
+            <a href="#download">download</a>
+            <a href="#source">source</a>
+        </span>
+    </div>
+    <div class="content-wrapper">
+        <div class="sidebar">
+            <a href="#about">about/</a>
+            <a href="#coding-style">coding style/</a>
+            <a href="#community">community/</a>
+            <a href="#conferences">conferences/</a>
+            <a href="#donations">donations/</a>
+            <a href="#faq">faq/</a>
+            <a href="#hacking">hacking/</a>
+            <a href="#other-projects">other projects/</a>
+            <a href="#people">people/</a>
+            <a href="#philosophy">philosophy/</a>
+            <a href="#project-ideas">project ideas/</a>
+            <a href="#rocks">rocks/</a>
+            <a href="#sucks">sucks/</a>
+            <a href="#wiki">wiki/</a>
+        </div>
+        <div class="main-content">
+            <p>Home of <a href="#dwm">dwm</a>, <a href="#dmenu">dmenu</a> and other quality software with a focus on simplicity, clarity, and frugality.</p>
+            <p>Read more about our <a href="#philosophy">philosophy</a> and join us on the <a href="#mailing-list">mailing list</a>.</p>
+            
+            <h2>News</h2>
+            <p><a href="#atom-feed">Atom feed</a></p>
+            
+            <div class="news-date">2024-11-26</div>
+            <p><a href="#svkbd">svkbd 0.4.2</a> released: <a href="#download">download</a></p>
+            
+            <div class="news-date">2024-04-05</div>
+            <p><a href="#st">st 0.9.2</a> released: <a href="#download">download</a></p>
+            <p>This reverts a commit and a regression with cursor move with wide glyphs, for example with GNU readline.</p>
+            
+            <div class="news-date">2024-03-20</div>
+            <p>Below are some highlights of the changes for the recent releases of dmenu, dwm, st and tabbed, see the git logs for all details:</p>
+            <p>General small Makefile improvements, rationale being: just be verbose and show what is done: do not abstract/hide details from the user/developer. Respect (more) the package manager and build system flags (CFLAGS, LDFLAGS, etc).</p>
+            
+            <p>dwm:</p>
+            <ul>
+                <li>Improvements to signal handling.</li>
+                <li>Fix: Avoid missing events when a keysym maps to multiple keycodes.</li>
+            </ul>
+            
+            <p>dmenu:</p>
+            <ul>
+                <li>Reduce memory usage for reading the lines.</li>
+                <li>Fix: X11 BadMatch error when embedding on some windows.</li>
+            </ul>
+            
+            <p>st:</p>
+            <ul>
+                <li>Fix: bounds checks of dc.col.</li>
+                <li>Fix: buffer overflow when handling long composed input.</li>
+                <li>Ignore C1 control characters in UTF-8 mode.</li>
+                <li>Improvements to cell handling and wide characters.</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

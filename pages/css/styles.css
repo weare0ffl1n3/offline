@@ -1,0 +1,104 @@
+/* Base Light Mode Styles */
+body {
+    font-family: monospace;
+    background-color: #FFFFFF; /* White background */
+    color: #333333; /* Dark text for contrast */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+.header {
+    background-color: #FFFFFF; /* White background for the header */
+    padding: 10px;
+}
+.site-title {
+    color: #333333; /* Dark text color for title */
+    font-size: 24px;
+    margin: 0;
+}
+.site-slogan {
+    color: #666666; /* Slightly lighter text for slogan */
+    font-style: italic;
+    margin: 0;
+}
+.navbar {
+    background-color: #FFFFFF; /* White background for navbar */
+    padding: 5px 0;
+    border-top: 1px solid #333333; /* Subtle border to separate navbar */
+}
+.navbar a {
+    color: #333333; /* Dark text for links */
+    text-decoration: none;
+    padding: 0 10px;
+}
+.navbar a:hover {
+    text-decoration: underline; /* Underline on hover for links */
+}
+.content-wrapper {
+    display: flex;
+}
+.sidebar {
+    width: 200px;
+    padding: 20px;
+    border-right: 1px dotted #333333; /* Subtle dotted border */
+    background-color: #FAFAFA; /* Light grey background for sidebar */
+}
+.sidebar a {
+    color: #333333; /* Dark text for sidebar links */
+    text-decoration: none;
+    display: block;
+    margin-bottom: 5px;
+}
+.sidebar a:hover {
+    text-decoration: underline; /* Underline on hover for sidebar links */
+}
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #FFFFFF; /* White background for main content */
+}
+.main-content a {
+    color: #333333; /* Dark text for main content links */
+    text-decoration: none;
+}
+.main-content a:hover {
+    text-decoration: underline; /* Underline on hover for main content links */
+}
+.news-date {
+    color: #666666; /* Light grey for dates */
+    margin-top: 20px;
+}
+.download-source {
+    float: right;
+}
+
+/* Dark Mode Styles */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #000000; /* Black background */
+        color: #999999; /* Light text for dark mode */
+    }
+    .header {
+        background-color: #111111; /* Dark background for header */
+    }
+    .site-title, .navbar a, .sidebar a, .main-content a {
+        color: #15C5DB; /* Light cyan for text */
+    }
+    .navbar {
+        background-color: #222222; /* Dark navbar */
+        border-top: 1px solid #444444; /* Lighter border for dark mode */
+    }
+    .sidebar {
+        background-color: #222222; /* Dark sidebar */
+        color: #ffffff; /* Light text for sidebar links */
+    }
+    .main-content {
+        background-color: #111111; /* Dark main content */
+    }
+    .news-date {
+        color: #888888; /* Lighter gray for dates in dark mode */
+    }
+    .download-source a {
+        color: #15C5DB; /* Light cyan for download and source links */
+    }
+}
